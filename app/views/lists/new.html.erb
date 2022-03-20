@@ -1,2 +1,50 @@
-<h1>Lists#new</h1>
-<p>Find me in app/views/lists/new.html.erb</p>
+<h1>Books</h1>
+　<div class="title">
+　  <h4>Title</h4>
+　  <h4>Body</h4>
+　</div>
+　<div class="body">
+　  <div class="box">
+　    <p><%= @book.title(paramr[1]) %></p>
+　    <p><%= @book.body(params[1]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[2]) %>計</p>
+　    <p><%= @book.body(paramr[2]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[3]) %></p>
+　    <p><%= @book.body(paramr[3]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[4]) %></p>
+　    <p><%= @book.body(paramr[4]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[5]) %></p>
+　    <p><%= @book.body(paramr[5]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[6]) %></p>
+　    <p><%= @book.body(paramr[6]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[7]) %></p>
+　    <p><%= @book.body(paramr[7]) %></p>
+　  </div>
+　  <div class="box">
+　    <p><%= @book.title(paramr[8]) %></p>
+　    <p><%= @book.body(paramr[8]) %></p>
+　  </div>
+　  
+　</div>
+
+<h2>New book</h2>
+<%= form_with model: @book do |f| %>
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <p>Body</p>
+  <%= f.text_area :body %>
+  <%= f.submit 'Create Book' %>
+
+<% end %>

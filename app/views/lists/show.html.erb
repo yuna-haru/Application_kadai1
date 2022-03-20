@@ -1,2 +1,5 @@
-<h1>Lists#show</h1>
-<p>Find me in app/views/lists/show.html.erb</p>
+<p>Title:<%= @book.title(params[:id]) %></p>
+
+<p>Body:<%= @book.body(params[:id]) %></p>
+
+<%= link_to Back "/new" %>
